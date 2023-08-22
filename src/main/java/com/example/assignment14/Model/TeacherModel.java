@@ -40,7 +40,7 @@ public class TeacherModel {
     @Column(columnDefinition = "int UNSIGNED not null")
     private Integer salary;
 
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "addressModel")
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "teacherModel")
     @PrimaryKeyJoinColumn
     private AddressModel addressModel;
 }
